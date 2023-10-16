@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SessionController;
+use Illuminate\Support\Facades\Route;   
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,7 @@ Route::get('/search', [\App\Http\Controllers\Frontend\HomePageController::class,
 
 Route::get('/contact', [\App\Http\Controllers\Frontend\HomePageController::class, 'contact'])->name('contact');
 
+
+Route::get('/sesi', [\App\Http\Controllers\SessionController::class, 'index']);
+Route::get('/sesi/logout', [\App\Http\Controllers\SessionController::class, 'logout']);
+Route::post('/sesi/login', [\App\Http\Controllers\SessionController::class, 'index']);

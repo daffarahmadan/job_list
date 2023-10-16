@@ -56,13 +56,10 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{{ route('homepage') }}">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ route('contact') }}">Kontak Kami</a>
-            </li>
           </ul>
           <ul class="navbar-nav"> 
             <li class="nav-item">
-              <a class="nav-link" href="">Sign Out</a>
+              <a class="nav-link" href="/sesi/logout">Sign Out</a>
             </li>
           </ul>
         </div>
